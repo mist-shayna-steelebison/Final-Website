@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Discovering Punjab — Home</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+<meta name="description" content="Discover the geography, history, culture, festivals, cuisine, arts, and authentic media of Punjab." />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Site Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Discovering Punjab Home">
+        <span class="brand-mark" aria-hidden="true">ੴ</span>
+        <span class="brand-text">Discovering Punjab</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="geography.html">Geography</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="culture-festivals.html">Culture &amp; Festivals</a></li>
+          <li><a href="cuisine-arts.html">Cuisine &amp; Arts</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="summary.html">Summary</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Discovering Punjab</h1>
+        <p>Explore Punjab’s geography, history, traditions, festivals, cuisine, and arts through an engaging, multimedia journey.</p>
+        <a class="btn btn-primary" href="geography.html">Start Exploring</a>
+      </div>
+
+      <!-- Replace the placeholder with a real banner image you add to /images -->
+      <figure class="hero-media" aria-label="Punjab banner image">
+        <img src="images/hero-punjab-placeholder.jpg" alt="Fields of Punjab with canal irrigation and distant cityscape" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- Quick Overview / Objectives -->
+  <main id="main" class="container">
+    <section class="card-grid">
+      <article class="card">
+        <h2 class="card-title">What You’ll Learn</h2>
+        <ul class="list-check">
+          <li>Key aspects of Punjab’s <strong>geography</strong> and <strong>history</strong>.</li>
+          <li>Major <strong>festivals</strong>, <strong>traditions</strong>, and cultural practices.</li>
+          <li>Highlights of Punjabi <strong>music</strong>, <strong>dance</strong>, <strong>cuisine</strong>, and <strong>arts</strong>.</li>
+          <li>How to navigate <strong>authentic media</strong> and reflect on cultural insights.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title">How This Site Works</h2>
+        <p>Use the top navigation to visit each page. You’ll find collapsible facts on <em>Geography</em>, an interactive timeline in <em>History</em>, show/hide sections in <em>Culture &amp; Festivals</em>, food hover reveals in <em>Cuisine &amp; Arts</em>, and an embedded media iFrame on <em>Resources</em>. Wrap up with a reflection on the <em>Summary</em> page.</p>
+        <a class="btn btn-ghost" href="resources.html">Jump to Resources</a>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title">Pages</h2>
+        <div class="pill-wrap" role="list" aria-label="Site pages">
+          <a role="listitem" class="pill" href="geography.html">Geography</a>
+          <a role="listitem" class="pill" href="history.html">History</a>
+          <a role="listitem" class="pill" href="culture-festivals.html">Culture &amp; Festivals</a>
+          <a role="listitem" class="pill" href="cuisine-arts.html">Cuisine &amp; Arts</a>
+          <a role="listitem" class="pill" href="resources.html">Resources</a>
+          <a role="listitem" class="pill" href="summary.html">Summary</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Callouts for Educators/Learners -->
+    <section class="split">
+      <div class="split-item">
+        <h2>For Learners</h2>
+        <p>Skim the overview on this page, then follow the nav from left to right. Keep notes for your final reflection.</p>
+      </div>
+      <div class="split-item">
+        <h2>For Instructors</h2>
+        <p>This site applies PARC design, interactive elements, and authentic resources to support exploration and reflection.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Discovering Punjab. All rights reserved.</p>
+      <nav aria-label="Footer">
+        <a href="resources.html">Resources</a>
+        <span aria-hidden="true">•</span>
+        <a href="summary.html">Summary</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Minimal JS for mobile nav + year stamp (no learning interactions on Home) -->
+  <script>
+    (function () {
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('site-nav');
+      const year = document.getElementById('year');
+
+      if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+          const expanded = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!expanded));
+          nav.classList.toggle('open');
+        });
+      }
+      if (year) year.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
