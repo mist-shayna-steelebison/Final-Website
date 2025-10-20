@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Discovering Punjab — Cuisine &amp; Arts</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">ੴ</span><span class="brand-text">Discovering Punjab</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="geography.html">Geography</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="culture-festivals.html">Culture &amp; Festivals</a></li>
+          <li><a class="active" href="cuisine-arts.html">Cuisine &amp; Arts</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="summary.html">Summary</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Cuisine &amp; Arts</h1>
+    <p>Hover (or tap) on a card to reveal details.</p>
+
+    <section class="reveal-grid">
+      <article class="reveal-card" tabindex="0">
+        <img src="images/cuisine-placeholder.jpg" alt="A traditional Punjabi dish" />
+        <div class="reveal-panel">
+          <h2>Staple Dishes</h2>
+          <p>Explore breads, legumes, dairy, and seasonal specialties.</p>
+        </div>
+      </article>
+
+      <article class="reveal-card" tabindex="0">
+        <img src="images/art-placeholder.jpg" alt="Punjabi textile or craft" />
+        <div class="reveal-panel">
+          <h2>Textiles &amp; Crafts</h2>
+          <p>Patterned fabrics, embroidery, and artisanal techniques.</p>
+        </div>
+      </article>
+
+      <article class="reveal-card" tabindex="0">
+        <img src="images/music-placeholder.jpg" alt="Instrument close-up" />
+        <div class="reveal-panel">
+          <h2>Instruments</h2>
+          <p>Learn how timbre and rhythm shape musical expression.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Discovering Punjab.</p>
+      <nav><a href="resources.html">Resources</a> <span aria-hidden="true">•</span> <a href="summary.html">Summary</a></nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

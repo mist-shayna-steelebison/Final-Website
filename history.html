@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Discovering Punjab — History</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">ੴ</span><span class="brand-text">Discovering Punjab</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="geography.html">Geography</a></li>
+          <li><a class="active" href="history.html">History</a></li>
+          <li><a href="culture-festivals.html">Culture &amp; Festivals</a></li>
+          <li><a href="cuisine-arts.html">Cuisine &amp; Arts</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="summary.html">Summary</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>History of Punjab</h1>
+    <p>Click a filter to highlight a period. Click a timeline item to read its note.</p>
+
+    <div class="timeline-controls" role="group" aria-label="Filter timeline by era">
+      <button class="btn btn-ghost tl-filter" data-era="all" aria-pressed="true">All</button>
+      <button class="btn btn-ghost tl-filter" data-era="ancient">Ancient</button>
+      <button class="btn btn-ghost tl-filter" data-era="medieval">Medieval</button>
+      <button class="btn btn-ghost tl-filter" data-era="modern">Modern</button>
+    </div>
+
+    <ol class="timeline" id="timeline">
+      <li class="tl-item" data-era="ancient" tabindex="0">
+        <time datetime="02600-01">c. 2600–1900 BCE</time>
+        <span class="tl-label">Indus Valley cultural sites</span>
+        <p class="tl-note">Urban planning, drainage, and trade patterns shaped early lifeways.</p>
+      </li>
+      <li class="tl-item" data-era="medieval" tabindex="0">
+        <time datetime="1500-01">15th–17th c.</time>
+        <span class="tl-label">Religious &amp; cultural renaissance</span>
+        <p class="tl-note">Literature, music, and institutions developed in a dynamic period.</p>
+      </li>
+      <li class="tl-item" data-era="modern" tabindex="0">
+        <time datetime="1947-08">1947</time>
+        <span class="tl-label">Partition &amp; migration</span>
+        <p class="tl-note">Borders redrawn; demographic and cultural shifts followed.</p>
+      </li>
+      <li class="tl-item" data-era="modern" tabindex="0">
+        <time datetime="1966-11">1966</time>
+        <span class="tl-label">State reorganization</span>
+        <p class="tl-note">Administrative changes influenced language and governance.</p>
+      </li>
+    </ol>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Discovering Punjab.</p>
+      <nav><a href="resources.html">Resources</a> <span aria-hidden="true">•</span> <a href="summary.html">Summary</a></nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

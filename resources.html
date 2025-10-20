@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Discovering Punjab — Resources</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">ੴ</span><span class="brand-text">Discovering Punjab</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="geography.html">Geography</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="culture-festivals.html">Culture &amp; Festivals</a></li>
+          <li><a href="cuisine-arts.html">Cuisine &amp; Arts</a></li>
+          <li><a class="active" href="resources.html">Resources</a></li>
+          <li><a href="summary.html">Summary</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Authentic Media Resources</h1>
+    <p>Below is an embedded media source. Replace the <code>src</code> with your chosen resource (playlist, museum collection, etc.).</p>
+
+    <div class="embed-wrap">
+      <!-- Replace src with your chosen URL -->
+      <iframe
+        title="Authentic Media Embed"
+        src="https://www.youtube.com/embed/videoseries?list=PL_placeholder"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <p class="small">If the embed doesn’t load, <a href="https://www.youtube.com/" target="_blank" rel="noopener">open it in a new tab</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Discovering Punjab.</p>
+      <nav><a href="resources.html">Resources</a> <span aria-hidden="true">•</span> <a href="summary.html">Summary</a></nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

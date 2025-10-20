@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Discovering Punjab — Culture &amp; Festivals</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">ੴ</span><span class="brand-text">Discovering Punjab</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="geography.html">Geography</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a class="active" href="culture-festivals.html">Culture &amp; Festivals</a></li>
+          <li><a href="cuisine-arts.html">Cuisine &amp; Arts</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="summary.html">Summary</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Culture &amp; Festivals</h1>
+    <p>Use the toggles to show or hide sections.</p>
+
+    <div class="toggle-controls" role="group" aria-label="Section toggles">
+      <button class="btn btn-primary cf-toggle" data-target="#music">Music</button>
+      <button class="btn btn-primary cf-toggle" data-target="#dance">Dance</button>
+      <button class="btn btn-primary cf-toggle" data-target="#festivals">Festivals</button>
+    </div>
+
+    <section id="music" class="toggle-section" aria-live="polite">
+      <h2>Music</h2>
+      <p>Explore instruments, folk and contemporary forms, and performance traditions.</p>
+    </section>
+
+    <section id="dance" class="toggle-section" aria-live="polite">
+      <h2>Dance</h2>
+      <p>From celebratory group dances to staged performances, movement tells stories.</p>
+    </section>
+
+    <section id="festivals" class="toggle-section" aria-live="polite">
+      <h2>Festivals</h2>
+      <p>Seasonal and community celebrations bring together music, food, and family.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Discovering Punjab.</p>
+      <nav><a href="resources.html">Resources</a> <span aria-hidden="true">•</span> <a href="summary.html">Summary</a></nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
